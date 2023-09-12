@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "GF/gL739evTG8h/MaPo9M4/t8Iado8d2fcN+X12iXQ3YyTzsWm0pEluFjdmeGuFSgnk5cR+AzQxnmS0sdg/mWg==",
+  "dgSpecHash": "/1lIkqGzOGTcNautiSNItZjbEviC37RRy2N9aPKeaSc0UpbjYIm8IWHI7gwX0rRFv7Qr9Zre9QINvaupepGaEw==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\test\\ClientManagementApi.Infrastrucure.Persistence\\ClientManagementApi.Infrastrucure.Persistence.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/sarafotros/Development/code/bootcamp/Bootcamp.CustomerManagement.ClientManagementApi/ClientManagementApi.Infrastrucure.Persistence/ClientManagementApi.Infrastrucure.Persistence.csproj",
+  "expectedPackageFiles": [
+    "/Users/sarafotros/.nuget/packages/microsoft.netcore.app.ref/6.0.12/microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
+    "/Users/sarafotros/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.12/microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512"
+  ],
   "logs": []
 }

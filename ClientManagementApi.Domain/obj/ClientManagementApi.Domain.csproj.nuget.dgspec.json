@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\test\\ClientManagementApi.Domain\\ClientManagementApi.Domain.csproj": {}
+    "/Users/sarafotros/Development/code/bootcamp/Bootcamp.CustomerManagement.ClientManagementApi/ClientManagementApi.Domain/ClientManagementApi.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Desktop\\test\\ClientManagementApi.Domain\\ClientManagementApi.Domain.csproj": {
+    "/Users/sarafotros/Development/code/bootcamp/Bootcamp.CustomerManagement.ClientManagementApi/ClientManagementApi.Domain/ClientManagementApi.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\test\\ClientManagementApi.Domain\\ClientManagementApi.Domain.csproj",
+        "projectUniqueName": "/Users/sarafotros/Development/code/bootcamp/Bootcamp.CustomerManagement.ClientManagementApi/ClientManagementApi.Domain/ClientManagementApi.Domain.csproj",
         "projectName": "ClientManagementApi.Domain",
-        "projectPath": "D:\\Desktop\\test\\ClientManagementApi.Domain\\ClientManagementApi.Domain.csproj",
-        "packagesPath": "C:\\Users\\MH\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\test\\ClientManagementApi.Domain\\obj\\",
+        "projectPath": "/Users/sarafotros/Development/code/bootcamp/Bootcamp.CustomerManagement.ClientManagementApi/ClientManagementApi.Domain/ClientManagementApi.Domain.csproj",
+        "packagesPath": "/Users/sarafotros/.nuget/packages/",
+        "outputPath": "/Users/sarafotros/Development/code/bootcamp/Bootcamp.CustomerManagement.ClientManagementApi/ClientManagementApi.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MH\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/sarafotros/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/moonpig/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -50,12 +49,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }

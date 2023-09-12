@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "57/Q/puWSdF+GoVcvY30mNxskVI3H/QLmfOk1n/BL2gKTiFB22E2FuuyoR0Paoydv2MPosl14mw581KZXT6N2A==",
+  "dgSpecHash": "ueekHMT2DOCBrktJnstMsVTdOndyvskjGxbz6b4mWBBKthPdU4YLOy+mmADeZYsne2Gxuh2MR3DRCRqeHKtv2g==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\test\\ClientManagementApi.Domain\\ClientManagementApi.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/sarafotros/Development/code/bootcamp/Bootcamp.CustomerManagement.ClientManagementApi/ClientManagementApi.Domain/ClientManagementApi.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/sarafotros/.nuget/packages/microsoft.netcore.app.ref/6.0.12/microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
+    "/Users/sarafotros/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.12/microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512"
+  ],
   "logs": []
 }

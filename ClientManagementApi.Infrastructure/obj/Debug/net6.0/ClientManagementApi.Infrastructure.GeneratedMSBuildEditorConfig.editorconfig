@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ClientManagementApi.Infrastructure
-build_property.ProjectDir = D:\Desktop\test\ClientManagementApi.Infrastructure\
+build_property.ProjectDir = /Users/sarafotros/Development/code/bootcamp/Bootcamp.CustomerManagement.ClientManagementApi/ClientManagementApi.Infrastructure/
