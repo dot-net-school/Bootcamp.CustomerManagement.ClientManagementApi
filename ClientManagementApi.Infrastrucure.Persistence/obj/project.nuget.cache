@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g3/qaCeJTVtlfe2ASfkrt4KGELMfg8F7DMZod6gg5BUOde7Hya+uI1PFPnvgtq0N07fSrAWiE8rgHTHoCaAW1Q==",
+  "dgSpecHash": "GF/gL739evTG8h/MaPo9M4/t8Iado8d2fcN+X12iXQ3YyTzsWm0pEluFjdmeGuFSgnk5cR+AzQxnmS0sdg/mWg==",
   "success": true,
-  "projectFilePath": "F:\\repos\\ClientManagementApi2\\ClientManagementApi\\ClientManagementApi.Infrastrucure.Persistence\\ClientManagementApi.Infrastrucure.Persistence.csproj",
+  "projectFilePath": "D:\\Desktop\\test\\ClientManagementApi.Infrastrucure.Persistence\\ClientManagementApi.Infrastrucure.Persistence.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

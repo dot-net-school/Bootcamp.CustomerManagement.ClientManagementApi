@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mxO3UEVnV/KAGSLA0q0NRvRDQOryIgdH2NeIPhsP64OMpOfdVq+MOLRD9JI2CZxh9i1jWnGJ/KHHsuFDVA9/ow==",
+  "dgSpecHash": "57/Q/puWSdF+GoVcvY30mNxskVI3H/QLmfOk1n/BL2gKTiFB22E2FuuyoR0Paoydv2MPosl14mw581KZXT6N2A==",
   "success": true,
-  "projectFilePath": "F:\\repos\\ClientManagementApi2\\ClientManagementApi\\ClientManagementApi.Domain\\ClientManagementApi.Domain.csproj",
+  "projectFilePath": "D:\\Desktop\\test\\ClientManagementApi.Domain\\ClientManagementApi.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

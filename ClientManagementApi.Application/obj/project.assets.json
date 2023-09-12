@@ -27,24 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NoteBook\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\MH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\repos\\ClientManagementApi2\\ClientManagementApi\\ClientManagementApi.Application\\ClientManagementApi.Application.csproj",
+      "projectUniqueName": "D:\\Desktop\\test\\ClientManagementApi.Application\\ClientManagementApi.Application.csproj",
       "projectName": "ClientManagementApi.Application",
-      "projectPath": "F:\\repos\\ClientManagementApi2\\ClientManagementApi\\ClientManagementApi.Application\\ClientManagementApi.Application.csproj",
-      "packagesPath": "C:\\Users\\NoteBook\\.nuget\\packages\\",
-      "outputPath": "F:\\repos\\ClientManagementApi2\\ClientManagementApi\\ClientManagementApi.Application\\obj\\",
+      "projectPath": "D:\\Desktop\\test\\ClientManagementApi.Application\\ClientManagementApi.Application.csproj",
+      "packagesPath": "C:\\Users\\MH\\.nuget\\packages\\",
+      "outputPath": "D:\\Desktop\\test\\ClientManagementApi.Application\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\NoteBook\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\MH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -58,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\repos\\ClientManagementApi2\\ClientManagementApi\\ClientManagementApi.Domain\\ClientManagementApi.Domain.csproj": {
-              "projectPath": "F:\\repos\\ClientManagementApi2\\ClientManagementApi\\ClientManagementApi.Domain\\ClientManagementApi.Domain.csproj"
+            "D:\\Desktop\\test\\ClientManagementApi.Domain\\ClientManagementApi.Domain.csproj": {
+              "projectPath": "D:\\Desktop\\test\\ClientManagementApi.Domain\\ClientManagementApi.Domain.csproj"
             }
           }
         }
@@ -79,7 +74,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -88,7 +84,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }
