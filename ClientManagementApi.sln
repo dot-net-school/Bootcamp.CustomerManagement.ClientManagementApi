@@ -11,13 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{858D0C2D-0203-439F-8531-0C85B8E2135C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientManagementApi.Application", "ClientManagementApi.Application\ClientManagementApi.Application.csproj", "{FD0B5FE4-F9CF-40EC-93C5-7DF7625CAD5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientManagementApi.Application", "ClientManagementApi.Application\ClientManagementApi.Application.csproj", "{FD0B5FE4-F9CF-40EC-93C5-7DF7625CAD5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientManagementApi.Domain", "ClientManagementApi.Domain\ClientManagementApi.Domain.csproj", "{08ED9B3D-D480-4534-9DF6-7F64CBCA6C96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientManagementApi.Domain", "ClientManagementApi.Domain\ClientManagementApi.Domain.csproj", "{08ED9B3D-D480-4534-9DF6-7F64CBCA6C96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientManagementApi.Infrastructure", "ClientManagementApi.Infrastructure\ClientManagementApi.Infrastructure.csproj", "{CA7B6617-0AF0-4B8C-AEBF-3F34C6A2E66E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientManagementApi.Infrastructure", "ClientManagementApi.Infrastructure\ClientManagementApi.Infrastructure.csproj", "{CA7B6617-0AF0-4B8C-AEBF-3F34C6A2E66E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientManagementApi.Infrastrucure.Persistence", "ClientManagementApi.Infrastrucure.Persistence\ClientManagementApi.Infrastrucure.Persistence.csproj", "{4BE8EF63-0528-4B07-9E80-2512495A17FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientManagementApi.Infrastrucure.Persistence", "ClientManagementApi.Infrastrucure.Persistence\ClientManagementApi.Infrastrucure.Persistence.csproj", "{4BE8EF63-0528-4B07-9E80-2512495A17FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApi", "ClientApi\ClientApi.csproj", "{CF301826-78D5-4D3E-8E7F-65AEF52C954E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{4BE8EF63-0528-4B07-9E80-2512495A17FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BE8EF63-0528-4B07-9E80-2512495A17FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BE8EF63-0528-4B07-9E80-2512495A17FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF301826-78D5-4D3E-8E7F-65AEF52C954E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF301826-78D5-4D3E-8E7F-65AEF52C954E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF301826-78D5-4D3E-8E7F-65AEF52C954E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF301826-78D5-4D3E-8E7F-65AEF52C954E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{08ED9B3D-D480-4534-9DF6-7F64CBCA6C96} = {1AADE4CC-D532-48E4-8567-394318D70558}
 		{CA7B6617-0AF0-4B8C-AEBF-3F34C6A2E66E} = {E22418BA-0B2A-477C-B2E0-BCECBAD11B99}
 		{4BE8EF63-0528-4B07-9E80-2512495A17FA} = {E22418BA-0B2A-477C-B2E0-BCECBAD11B99}
+		{CF301826-78D5-4D3E-8E7F-65AEF52C954E} = {858D0C2D-0203-439F-8531-0C85B8E2135C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDE0EE51-EC17-4F83-B322-F51435896386}
