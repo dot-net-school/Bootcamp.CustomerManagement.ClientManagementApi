@@ -1,4 +1,5 @@
 using ClientManagementApi.Domain.Common;
+using System.ComponentModel.DataAnnotations;
 
 namespace ClientManagementApi.Domain.Entities;
 
@@ -6,7 +7,7 @@ public class Client : BaseEntity
 {
     public string FirstName { get; set; } = null!;
     public string LastName { get; set; } = null!;
-    public string? Email { get; set; }
+    public string Email { get; set; } = null!;
     public string? PhoneNumber { get; set; }
     public DateOnly DateOfBirth { get; set; }
     public Address? Address { get; set; }
