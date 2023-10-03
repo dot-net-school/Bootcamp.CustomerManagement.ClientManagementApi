@@ -1,5 +1,5 @@
 using ClientApi;
-//using ClientManagementApi.Application;
+using ClientManagementApi.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //TODO: unComment 
-builder.Services//.RegisterApplicationServices()
+builder.Services.RegisterApplicationServices()
 //.RegisterInfrastructureServices()
 //.RegisterPersistenceServices(builder.Configuration)
 .RegisterPresentationServices();

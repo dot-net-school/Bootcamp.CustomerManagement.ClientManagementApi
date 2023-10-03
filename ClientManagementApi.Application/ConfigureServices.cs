@@ -5,27 +5,22 @@ using System.Reflection;
 
 
 
-namespace ClientManagementApi.Application
+namespace ClientManagementApi.Application;
+
+public static class ConfigureServices
 {
-
-
-
-    public static class ConfigureServices
+    public static IServiceCollection RegisterApplicationServices(this IServiceCollection services)
     {
-        public static IServiceCollection RegisterApplicationServices(this IServiceCollection services)
+        //TODO: unComment 
+        //services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+        services.AddMediatR(cfg =>
         {
-
-            //TODO: unComment 
-
-            //services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-            services.AddMediatR(cfg =>
-            {
-                cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
-                //cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
-            });
-
-            //  services.AddScoped<IAuthenticationService, AuthenticationService>();
-            return services;
+            cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+            // cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
         }
+        );
+
+        return services;
     }
 }
+

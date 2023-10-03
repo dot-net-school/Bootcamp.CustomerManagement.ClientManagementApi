@@ -11,9 +11,9 @@ namespace ClientManagementApi.Application.Clients.Command
 {
     public class CreateClientCommandHandler : IRequestHandler<CreateClientCommand, Guid>
     {
-        private readonly IApplicationUnitOfWork _uow;
-        public CreateClientCommandHandler(IApplicationUnitOfWork applicationUnitOfWork)
-            => _uow = applicationUnitOfWork;
+        //private readonly IApplicationUnitOfWork _uow;
+        //public CreateClientCommandHandler(IApplicationUnitOfWork applicationUnitOfWork)
+        //    => _uow = applicationUnitOfWork;
 
         public async Task<Guid> Handle(CreateClientCommand request, CancellationToken cancellationToken = default)
         {
@@ -23,8 +23,9 @@ namespace ClientManagementApi.Application.Clients.Command
                 LastName = request.LastName,
                 Email = request.Email
             };
-            _uow.Clients.Add(client);
-            await _uow.SaveChangesAsync(cancellationToken);
+            
+            //_uow.Clients.Add(client);
+            //await _uow.SaveChangesAsync(cancellationToken);
             return client.Id;
         }
     }
