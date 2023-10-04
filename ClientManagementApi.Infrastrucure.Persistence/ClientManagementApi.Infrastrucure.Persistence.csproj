@@ -23,4 +23,8 @@
     <ProjectReference Include="..\ClientManagementApi.Domain\ClientManagementApi.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

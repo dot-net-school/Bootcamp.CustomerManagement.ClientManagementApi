@@ -3,7 +3,7 @@ using ClientManagementApi.Domain.Common;
 namespace ClientManagementApi.Domain.Entities;
 
 
-public class Address : BaseEntity
+public class Address : BaseEntity<int>
 {
     public string? City { get; set; }
     public string? Street { get; set; }
