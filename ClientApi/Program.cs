@@ -1,9 +1,13 @@
 using ClientApi;
 using ClientManagementApi.Application;
+using ClientManagementApi.Application.Common.Interfaces;
+using ClientManagementApi.Infrastrucure.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite("Data Source=D:\\DBs\\DB\\ClientManagementDb.db;"));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -15,6 +19,7 @@ builder.Services.RegisterApplicationServices()
 //.RegisterPersistenceServices(builder.Configuration)
 .RegisterPresentationServices();
 
+builder.Services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

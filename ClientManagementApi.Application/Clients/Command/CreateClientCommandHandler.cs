@@ -1,4 +1,5 @@
 ﻿using ClientManagementApi.Application.Common;
+using ClientManagementApi.Application.Common.Interfaces;
 using ClientManagementApi.Domain.Entities;
 using MediatR;
 using System;
@@ -11,21 +12,25 @@ namespace ClientManagementApi.Application.Clients.Command
 {
     public class CreateClientCommandHandler : IRequestHandler<CreateClientCommand, Guid>
     {
-        //private readonly IApplicationUnitOfWork _uow;
-        //public CreateClientCommandHandler(IApplicationUnitOfWork applicationUnitOfWork)
-        //    => _uow = applicationUnitOfWork;
 
+        private readonly IApplicationDbContext _context;
+        public CreateClientCommandHandler(IApplicationDbContext context)
+        {
+            _context = context;
+        }
         public async Task<Guid> Handle(CreateClientCommand request, CancellationToken cancellationToken = default)
         {
             var client = new Client
             {
                 FirstName = request.FirstName,
                 LastName = request.LastName,
-                Email = request.Email
+                Email = request.Email,
+                PhoneNumber = request.PhoneNumber
             };
             
-            //_uow.Clients.Add(client);
-            //await _uow.SaveChangesAsync(cancellationToken);
+            _context.Client.Add(client);
+            await _context.SaveChangesAsync(cancellationToken);
+        
             return client.Id;
         }
     }
