@@ -1,9 +1,9 @@
 namespace ClientManagementApi.Domain.Entities;
 
-public enum MaritalStatus
+public enum MaritalStatus : byte
 {
-    Single,
-    Married,
-    Divorced,
-    Widowed
+    Single = 1,
+    Married = 2,
+    Divorced = 3,
+    Widowed = 4
 }

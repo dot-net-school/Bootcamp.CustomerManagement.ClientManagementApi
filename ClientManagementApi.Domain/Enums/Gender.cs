@@ -1,7 +1,7 @@
 namespace ClientManagementApi.Domain.Entities;
 
-public enum Gender
+public enum Gender: Byte
 {
-    Female,
-    Male
+    Female = 1,
+    Male = 2
 }
