@@ -9,7 +9,7 @@ public class Client : BaseEntity<Guid>
     public string LastName { get; set; } = null!;
     public string Email { get; set; } = null!;
     public string? PhoneNumber { get; set; }
-    public DateOnly DateOfBirth { get; set; }
+    public DateTime DateOfBirth { get; set; }
     public MaritalStatus MaritalStatus { get; set; }
     public Gender Gender { get; set; }
     public string? NationalId { get; set; }
