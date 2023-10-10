@@ -1,6 +1,8 @@
+using ClientManagementApi.Domain.Common;
+
 namespace ClientManagementApi.Domain.Entities;
 
-public class Degree
+public class Degree : BaseEntity<int>
 {
     public string? Name { get; set; }
     public string? University { get; set; }

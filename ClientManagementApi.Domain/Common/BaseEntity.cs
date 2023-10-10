@@ -1,6 +1,6 @@
 namespace ClientManagementApi.Domain.Common;
 
-public class BaseEntity
+public abstract class BaseEntity<T>
 {
-    public Guid Id { get; set; }
+    public T Id { get; set; }
 }
