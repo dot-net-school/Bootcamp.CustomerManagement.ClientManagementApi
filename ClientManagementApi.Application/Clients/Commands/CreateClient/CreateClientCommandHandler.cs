@@ -28,7 +28,7 @@ namespace ClientManagementApi.Application.Clients.Command.CreateClient
                 PhoneNumber = request.PhoneNumber
             };
 
-            _context.Client.Add(client);
+            _context.Set<Client>().Add(client);
             await _context.SaveChangesAsync(cancellationToken);
 
             return client.Id;
