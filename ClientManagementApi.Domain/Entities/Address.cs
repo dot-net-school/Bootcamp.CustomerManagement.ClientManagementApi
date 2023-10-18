@@ -2,7 +2,7 @@ using ClientManagementApi.Domain.Common;
 
 namespace ClientManagementApi.Domain.Entities;
 
-
+[Entity]
 public class Address : BaseEntity<int>
 {
     public string? City { get; set; }

@@ -16,6 +16,7 @@ namespace ClientManagementApi.Infrastrucure.Persistence.Extensions
             IEnumerable<Type> types = assemblies.SelectMany(a => a.GetExportedTypes())
                 .Where(c => c.IsClass && !c.IsAbstract && c.IsPublic &&
             Attribute.IsDefined(c,typeof(EntityAttribute)));
+            
             foreach (Type type in types)
                 modelBuilder.Entity(type);
         }

@@ -1,7 +1,7 @@
 using ClientManagementApi.Domain.Common;
 
 namespace ClientManagementApi.Domain.Entities;
-
+[Entity]
 public class Job : BaseEntity<int>
 {
     public string CompanyName { get; set; }
