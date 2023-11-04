@@ -1,9 +1,10 @@
-﻿using MediatR;
+﻿using ClientManagementApi.Application.Common.DTOs;
+using MediatR;
 
 
 namespace ClientManagementApi.Application.Clients.Command.CreateClient
 {
-    public record CreateClientCommand : IRequest<Guid>
+    public record CreateClientCommand : IRequest<ApiResult>
     {
         public string FirstName { get; set; } = null!;
         public string LastName { get; set; } = null!;

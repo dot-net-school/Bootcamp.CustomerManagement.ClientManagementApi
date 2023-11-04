@@ -2,6 +2,7 @@ using ClientManagementApi.Application.Clients.Command.CreateClient;
 using ClientManagementApi.Application.Clients.Commands.DeleteClient;
 using ClientManagementApi.Application.Clients.Commands.UpdateClient;
 using ClientManagementApi.Application.Clients.Queries.GetClinetForScoring;
+using ClientManagementApi.Application.Common.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ClientApi.Controllers;
@@ -16,7 +17,7 @@ public class ClientController : BaseController
     => await Mediator.Send(query);
 
     [HttpPost]
-    public async Task<ActionResult<Guid>> Create(CreateClientCommand command)
+    public async Task<ActionResult<ApiResult>> Create(CreateClientCommand command)
            => await Mediator.Send(command);
 
     [HttpPut]
