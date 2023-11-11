@@ -1,4 +1,5 @@
 ﻿using ClientManagementApi.Application.Common;
+using ClientManagementApi.Application.Common.DTOs;
 using ClientManagementApi.Application.Common.Interfaces;
 using ClientManagementApi.Domain.Entities;
 using MediatR;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace ClientManagementApi.Application.Clients.Command.CreateClient
 {
-    public class CreateClientCommandHandler : IRequestHandler<CreateClientCommand, Guid>
+    public class CreateClientCommandHandler : IRequestHandler<CreateClientCommand, ApiResult>
     {
 
         private readonly IApplicationDbContext _context;
@@ -18,7 +19,7 @@ namespace ClientManagementApi.Application.Clients.Command.CreateClient
         {
             _context = context;
         }
-        public async Task<Guid> Handle(CreateClientCommand request, CancellationToken cancellationToken = default)
+        public async Task<ApiResult> Handle(CreateClientCommand request, CancellationToken cancellationToken = default)
         {
             var client = new Client
             {
@@ -27,11 +28,21 @@ namespace ClientManagementApi.Application.Clients.Command.CreateClient
                 Email = request.Email,
                 PhoneNumber = request.PhoneNumber
             };
+            var apiResult = new ApiResult();
+            try
+            {
+                _context.Set<Client>().Add(client);
+                await _context.SaveChangesAsync(cancellationToken);
+                apiResult.IsSuccess = true;
+                apiResult.Data = client.Id;
+            }
+            catch (Exception e)
+            {
 
-            _context.Client.Add(client);
-            await _context.SaveChangesAsync(cancellationToken);
-
-            return client.Id;
+                apiResult.IsSuccess = false;
+                apiResult.ErrorMessage = e.Message;
+            }
+            return apiResult;
         }
     }
 }

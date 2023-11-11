@@ -20,7 +20,7 @@ namespace ClientManagementApi.Application.Clients.Commands.UpdateClient
         }
         public async Task<string> Handle(UpdateClientCommand request, CancellationToken cancellationToken = default)
         {
-            var result = await _context.Client.FindAsync(new object[] { request.Id }, cancellationToken);
+            var result = await _context.Set<Client>().FindAsync(new object[] { request.Id }, cancellationToken);
             if (result != null)
             {
                 result.FirstName = request.FirstName;

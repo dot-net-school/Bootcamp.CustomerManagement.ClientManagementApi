@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ClientManagementApi.Domain.Entities;
 
+[Entity]
 public class Client : BaseEntity<Guid>
 {
     public string FirstName { get; set; } = null!;

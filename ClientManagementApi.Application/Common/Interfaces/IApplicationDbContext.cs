@@ -10,11 +10,13 @@ namespace ClientManagementApi.Application.Common.Interfaces
 {
     public interface IApplicationDbContext
     {
-        public DbSet<Client> Client { get; set; }
-        public DbSet<Address> Address { get; set; }
-        public DbSet<Degree> Degree { get; set; }
-        public DbSet<Job> Job { get; set; }
-        Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
+        //public DbSet<Client> Client { get; set; }
+        //public DbSet<Address> Address { get; set; }
+        //public DbSet<Degree> Degree { get; set; }
+        //public DbSet<Job> Job { get; set; }
+        DbSet<TEntity> Set<TEntity>() where TEntity : class;
+
+       Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 
     }
 }

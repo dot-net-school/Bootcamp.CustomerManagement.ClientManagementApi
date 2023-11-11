@@ -1,7 +1,7 @@
 using ClientManagementApi.Domain.Common;
 
 namespace ClientManagementApi.Domain.Entities;
-
+[Entity]
 public class Degree : BaseEntity<int>
 {
     public string? Name { get; set; }

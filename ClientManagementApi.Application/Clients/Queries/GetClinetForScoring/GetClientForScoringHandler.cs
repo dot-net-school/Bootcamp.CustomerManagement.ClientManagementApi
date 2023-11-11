@@ -1,4 +1,5 @@
 ﻿using ClientManagementApi.Application.Common.Interfaces;
+using ClientManagementApi.Domain.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -19,7 +20,7 @@ namespace ClientManagementApi.Application.Clients.Queries.GetClinetForScoring
 
         public async Task<GetClinetForScoringDto> Handle(GetClientForScoringQuery request, CancellationToken cancellationToken)
         {
-            var result = await _context.Client
+            var result = await _context.Set<Client>()
                                        .Select(x => new GetClinetForScoringDto
                                        {
                                            Email = x.Email,
@@ -31,6 +32,6 @@ namespace ClientManagementApi.Application.Clients.Queries.GetClinetForScoring
             return result;
         }
 
-        
+
     }
 }
